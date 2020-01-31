@@ -10,7 +10,7 @@ canvas.height = mcbheight;
 var cx = 3.5;
 var rx = 0.75;
 var cy = 0.5;
-var ry = rx*mcbwidth/mcbheight;
+var ry = rx*mcbheight/mcbwidth;
 
 var xres = 2*rx/mcbwidth;
 var yres = 2*ry/mcbheight;
