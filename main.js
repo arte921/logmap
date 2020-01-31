@@ -24,7 +24,7 @@ var go = new Date();
 x=cx-rx;
 y=0.5;
 while (x<=cx+rx){
-	for(i=0;i<1000;i++){
+	for(i=0;i<10000;i++){
 		y=x*y*(1-y);
 		plot(x,y);
 	}
