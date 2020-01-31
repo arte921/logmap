@@ -1,3 +1,5 @@
+var pxx,pxy;
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
@@ -13,5 +15,8 @@ var xres = 2*rx/mcbwidth;
 var yres = 2*ry/mcbheight;
 
 function plot(x,y){
-
+	pxx = (x-(cx-rx))/(2*rx)*mcbwidth;
+	pxy = mcbheight-((y-(cy-ry))/(2*ry)*mcbheight);
+	console.log(pxx,pxy);
+	ctx.fillRect(pxx,pxy,1,1);
 }
