@@ -7,9 +7,9 @@ var mcbwidth = window.innerWidth;
 canvas.width = mcbwidth
 canvas.height = mcbheight;
 
-var cx = 3.4;
-var cy = 0.6;
-var rx = 0.75;
+var cx = 3;
+var cy = 0.5;
+var rx = 1.1;
 var ry = rx*mcbheight/mcbwidth;
 
 var xres = 2*rx/mcbwidth;
@@ -26,7 +26,8 @@ var go = new Date();
 x=cx-rx;
 y=0.5;
 while (x<=cx+rx){
-	for(i=0;i<1000;i++){
+
+	for(i=0;i<100;i++){
 		y=x*y*(1-y);
 		plot(x,y);
 	}
