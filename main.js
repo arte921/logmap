@@ -20,7 +20,9 @@ function plot(mx,my){
 	pxy = mcbheight-((my-(cy-ry))/(2*ry)*mcbheight);
 	ctx.fillRect(pxx,pxy,1,1);
 }
+
 var go = new Date();
+
 x=cx-rx;
 y=0.5;
 while (x<=cx+rx){
@@ -30,4 +32,5 @@ while (x<=cx+rx){
 	}
 	x += xres;
 }
+
 console.log(new Date()-go);
