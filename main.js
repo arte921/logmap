@@ -14,6 +14,7 @@ var ry = rx*mcbheight/mcbwidth;
 
 var xres = 2*rx/mcbwidth;
 var yres = 2*ry/mcbheight;
+var it = 100;
 
 function plot(mx,my){
 	pxx = (mx-(cx-rx))/(2*rx)*mcbwidth;
@@ -25,9 +26,9 @@ var go = new Date();
 
 x=cx-rx;
 y=0.5;
-while (x<=cx+rx){
 
-	for(i=0;i<100;i++){
+while (x<=cx+rx){
+	for(i=0;i<it;i++){
 		y=x*y*(1-y);
 		plot(x,y);
 	}
