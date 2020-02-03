@@ -18,7 +18,7 @@ var it = 100;
 
 function plot(mx,my){
 	pxx = (mx-(cx-rx))/(2*rx)*mcbwidth;
-	pxy = mcbheight-((my-(cy-ry))/(2*ry)*mcbheight);
+	pxy = mcbheight-((my-(cy-ry))/(2*ry)*mcbheight); 
 	ctx.fillRect(pxx,pxy,1,1);
 }
 
