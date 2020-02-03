@@ -22,7 +22,7 @@ function plot(mx,my){
 	ctx.fillRect(pxx,pxy,1,1);
 }
 
-var go = new Date();
+var go = window.performance.now();
 
 x=cx-rx;
 y=0.5;
@@ -35,4 +35,4 @@ while (x<=cx+rx){
 	x += xres;
 }
 
-console.log(new Date()-go);
+console.log(window.performance.now()-go);
